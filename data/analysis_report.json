@@ -1,0 +1,56 @@
+{
+  "total_runs": 1680,
+  "models": [
+    "BERT-base",
+    "RoBERTa-base"
+  ],
+  "tasks": [
+    "SST2",
+    "MRPC",
+    "QNLI",
+    "RTE"
+  ],
+  "ranks": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "sample_sizes": [
+    50,
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    5000
+  ],
+  "valid_anova_cells": 56,
+  "significant_anova_cells_fdr_0.05": 29,
+  "degenerate_cells": 0,
+  "degenerate_models": [],
+  "mean_optimal_rank_by_n_unique_only": {
+    "50": 43.714285714285715,
+    "100": 48.0,
+    "200": 26.285714285714285,
+    "500": 38.0,
+    "1000": 34.0,
+    "2000": 38.857142857142854,
+    "5000": 28.571428571428573
+  },
+  "rank_win_count_unique_only": {
+    "2": 1,
+    "8": 2,
+    "16": 14,
+    "32": 17,
+    "64": 17
+  },
+  "task_complexity_spearman_rho": -0.7999999999999999,
+  "task_complexity_spearman_p": 0.2000000000000001,
+  "notes": [
+    "Inferential rank analyses exclude cells with degenerate rank means or zero within-seed variance.",
+    "Optimal-rank summaries use unique optima only; exact ties are labeled tie and excluded from numeric trend estimates."
+  ]
+}
